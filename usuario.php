@@ -11,7 +11,7 @@
 
 $encriptar = Encriptar::encripssl($password);
 
-//echo $encriptar . "<br>";
+echo $encriptar . "<br>";
 
 $registrar = "INSERT INTO usuario VALUES(      NULL, '".$nombre."','".$encriptar."')";
 
@@ -20,13 +20,3 @@ Conexion::conectar("seguridad");
 mysql_query($registrar);
 
 ?>
-
-
-
-
-
-
-
-
-
-
